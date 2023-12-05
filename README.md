@@ -19,23 +19,27 @@ Btw, feel free to reach out to me! 🌐 <br />
 
 #### Get the Middle Character?
 
-> 7 kyu
+> 8 kyu
 
 ###### Description:
 
-> You are going to be given a word. Your job is to return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.
+> Make a function that returns the value multiplied by 50 and increased by 6.If the value entered is a string it should return "Error"
 
 ```javascript
-function getMiddle(s) {
-  //Code goes here!
+function problem(x) {
+  //code here
 }
 ```
 
 <details><summary><b>My Answer</b></summary>
 
 ```javascript
-function getMiddle(s) {
-  return s.slice((s.length - 1) / 2, s.length / 2 + 1);
+function problem(x) {
+  if (typeof x === "number") {
+    return x * 50 + 6;
+  } else {
+    return "Error";
+  }
 }
 ```
 
@@ -44,8 +48,8 @@ function getMiddle(s) {
 <details><summary><b>Best Answer</b></summary>
 
 ```javascript
-function getMiddle(s) {
-  return s.slice((s.length - 1) / 2, s.length / 2 + 1);
+function problem(x) {
+  return typeof x === "number" ? x * 50 + 6 : "Error";
 }
 ```
 
