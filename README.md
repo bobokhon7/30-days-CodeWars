@@ -107,3 +107,60 @@ function friend(friends) {
 </details>
 
 ---
+
+#### A Needle in the Haystack
+
+> 8 kyu
+
+###### Description:
+
+> Can you find the needle in the haystack?
+
+> Write a function findNeedle() that takes an array full of junk but containing one "needle"
+
+> After your function finds the needle it should return a message (as a string) that says:
+
+> "found the needle at position " plus the index it found the needle, so:
+
+> Example(Input --> Output)
+
+```javascript
+["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] --> "found the needle at position 5"
+
+```
+
+```javascript
+function findNeedle(haystack) {
+  //code is here
+}
+```
+
+<details><summary><b>My Answer</b></summary>
+
+```javascript
+function findNeedle(haystack) {
+  let position = haystack.indexOf("needle");
+
+  return position != -1
+    ? `found the needle at position ${position}`
+    : `Your function didn't return anything'`;
+}
+```
+
+</details>
+
+<details><summary><b>Best Answer</b></summary>
+
+```javascript
+// Using template literals, simply return the string, with the injected 'indexOf'
+
+function findNeedle(haystack) {
+  return `found the needle at position ${haystack.indexOf("needle")}`;
+}
+```
+
+</details>
+
+</details>
+
+---
