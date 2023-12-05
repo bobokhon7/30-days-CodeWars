@@ -1,11 +1,16 @@
-function findNeedle(haystack) {
-  let position = haystack.indexOf("needle");
-
-  return position != -1
-    ? `found the needle at position ${position}`
-    : `Your function didn't return anything'`;
+function correct(string) {
+  let newArr = string.split("");
+  for (let i = 0; i < newArr.length; i++) {
+    if (newArr[i] === "0") {
+      newArr[i] = "O";
+    } else if (newArr[i] === "5") {
+      newArr[i] = "S";
+    } else if (newArr[i] === "1") {
+      newArr[i] = "I";
+      //   break;
+    }
+  }
+  return newArr.join("");
 }
 
-console.log(
-  findNeedle(["hay", "junk", "hay", "hay", "moreJunk", , "randomJunk"])
-);
+console.log(correct("51NGAP0RE"));
