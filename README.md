@@ -53,6 +53,10 @@ function problem(x) {
 }
 ```
 
+</details>
+
+---
+
 #### Friend or Foe?
 
 > 7 kyu
