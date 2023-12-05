@@ -4,11 +4,7 @@
 
 ---
 
-<<<<<<< HEAD
-<span>Hello World! I love solving coding problems, especially on <a href="https://www.codewars.com/">codewars</a>. So, I decided to share my 50-days-of-solving-codewars-problems journey here. Have a look 👇</span>
-=======
 <span>Hello World! I love solving coding problems, especially on <a href="https://www.codewars.com/">codewars</a>. So, I decided to share my 30-days-of-solving-codewars-problems journey here. Have a look 👇</span>
->>>>>>> 7270dbe (Create README.md)
 
 <span>Everyday I will solve one question from codewars and share below. It will include the question, my answer and one or two best answers from codewars community.</span>
 
@@ -18,8 +14,6 @@ Btw, feel free to reach out to me! 🌐 <br />
 </div>
 
 ---
-<<<<<<< HEAD
-=======
 
 <details><summary><b>Day 0</b></summary>
 
@@ -60,4 +54,3 @@ function getMiddle(s) {
 </details>
 
 ---
->>>>>>> 7270dbe (Create README.md)
