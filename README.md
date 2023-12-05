@@ -17,7 +17,7 @@ Btw, feel free to reach out to me! 🌐 <br />
 
 <details><summary><b>Day 0</b></summary>
 
-#### Get the Middle Character?
+#### Super Duper Easy
 
 > 8 kyu
 
@@ -50,6 +50,57 @@ function problem(x) {
 ```javascript
 function problem(x) {
   return typeof x === "number" ? x * 50 + 6 : "Error";
+}
+```
+
+</details>
+
+</details>
+
+---
+
+#### Friend or Foe?
+
+> 7 kyu
+
+###### Description:
+
+> Make a program that filters a list of strings and returns a list with only your friends name in it.
+> If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! Otherwise, you can be sure he's not...
+
+Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
+
+i.e.
+
+```javascript
+friend[("Ryan", "Kieran", "Mark")]`shouldBe`[("Ryan", "Mark")];
+```
+
+```javascript
+function friend(friends) {
+  //code here
+}
+```
+
+<details><summary><b>My Answer</b></summary>
+
+```javascript
+function friend(friends) {
+  let myFriends = [];
+  for (i = 0; i < friends.length; i++) {
+    friends[i].trim().length === 4 ? myFriends.push(friends[i]) : "it works😅";
+  }
+  return myFriends;
+}
+```
+
+</details>
+
+<details><summary><b>Best Answer</b></summary>
+
+```javascript
+function friend(friends) {
+  return friends.filter((n) => n.length === 4);
 }
 ```
 
