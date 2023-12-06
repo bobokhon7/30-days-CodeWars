@@ -1,16 +1,6 @@
-function correct(string) {
-  let newArr = string.split("");
-  for (let i = 0; i < newArr.length; i++) {
-    if (newArr[i] === "0") {
-      newArr[i] = "O";
-    } else if (newArr[i] === "5") {
-      newArr[i] = "S";
-    } else if (newArr[i] === "1") {
-      newArr[i] = "I";
-      //   break;
-    }
-  }
-  return newArr.join("");
+function mergeArrays(arr1, arr2) {
+  let newArr = arr1.concat(arr2).sort((a, b) => a - b);
+  return newArr.filter((value, index) => newArr.indexOf(value) === index);
 }
 
-console.log(correct("51NGAP0RE"));
+console.log(mergeArrays([1, 3, 5, 7, 9, 11, 12], [1, 2, 3, 4, 5, 10, 12]));
