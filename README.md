@@ -223,6 +223,7 @@ function correct(string) {
 </details>
 
 <details><summary><b>Day 1</b></summary>
+
 #### Q: Question is here
 
 > 8 kyu
