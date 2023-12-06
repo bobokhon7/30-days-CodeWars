@@ -237,7 +237,7 @@ function correct(string) {
 }
 ```
 
-details><summary><b>My Answer</b></summary>
+<details><summary><b>My Answer</b></summary>
 
 ```javascript
 //code is here
@@ -255,8 +255,7 @@ code is here
 
 </details>
 
----
-
 </details>
 
+</details>
 </details>
