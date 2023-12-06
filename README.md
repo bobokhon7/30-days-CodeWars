@@ -222,7 +222,7 @@ function correct(string) {
 
 </details>
 
-/////////////////
+<!-- Day 1 ----------------------------------- -->
 
 <details><summary><b>Day 1</b></summary>
 
