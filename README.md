@@ -105,9 +105,6 @@ function friend(friends) {
 </details>
 
 </details>
-
----
-
 #### A Needle in the Haystack
 
 > 8 kyu
@@ -221,5 +218,7 @@ function correct(string) {
 </details>
 
 </details>
+
+---
 
 ---
