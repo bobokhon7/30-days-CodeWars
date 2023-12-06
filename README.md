@@ -17,7 +17,7 @@ Btw, feel free to reach out to me! 🌐 <br />
 
 <details><summary><b>Day 0</b></summary>
 
-#### Super Duper Easy
+#### Q: Super Duper Easy
 
 > 8 kyu
 
@@ -57,7 +57,7 @@ function problem(x) {
 
 ---
 
-#### Friend or Foe?
+#### Q: Friend or Foe?
 
 > 7 kyu
 
@@ -102,7 +102,7 @@ function friend(friends) {
 }
 ```
 
-#### A Needle in the Haystack
+#### Q: A Needle in the Haystack
 
 > 8 kyu
 
@@ -159,7 +159,7 @@ function findNeedle(haystack) {
 
 ---
 
-#### Correct the mistakes of the character recognition software
+#### Q: Correct the mistakes of the character recognition software
 
 > 8 kyu
 
@@ -221,5 +221,3 @@ function correct(string) {
 </details>
 
 </details>
-
----
