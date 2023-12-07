@@ -281,7 +281,7 @@ function mergeArrays(arr1, arr2) {
 </details>
 
 <!-- day 2 ------------------ -->
-<details><summary><b>Day 1</b></summary>
+<details><summary><b>Day 2</b></summary>
 
 #### Q: Count the smiley faces!
 
@@ -380,10 +380,6 @@ function countSmileys(arr) {
 }
 ```
 
-</details>
-
-</details>
-
 #### Q: Small enough? - Beginner
 
 > 7 kyu
@@ -421,6 +417,10 @@ function smallEnough(a, limit) {
   return true;
 }
 ```
+
+</details>
+
+</details>
 
 </details>
 
