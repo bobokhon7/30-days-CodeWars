@@ -279,3 +279,199 @@ function mergeArrays(arr1, arr2) {
 
 </details>
 </details>
+
+<!-- day 2 ------------------ -->
+<details><summary><b>Day 1</b></summary>
+
+#### Q: Count the smiley faces!
+
+> 6 kyu
+
+###### Description:
+
+> Given an array (arr) as an argument complete the function countSmileys that should return the total number of smiling faces.
+
+Rules for a smiling face:
+
+Each smiley face must contain a valid pair of eyes. Eyes can be marked as : or ;
+A smiley face can have a nose but it does not have to. Valid characters for a nose are - or ~
+Every smiling face must have a smiling mouth that should be marked with either ) or D
+No additional characters are allowed except for those mentioned.
+
+Valid smiley face examples: :) :D ;-D :~)
+Invalid smiley faces: ;( :> :} :]
+
+Example
+
+```javascript
+countSmileys([":)", ";(", ";}", ":-D"]); // should return 2;
+countSmileys([";D", ":-(", ":-)", ";~)"]); // should return 3;
+countSmileys([";]", ":[", ";*", ":$", ";-D"]); // should return 1;
+```
+
+> Note
+> In case of an empty array return 0. You will not be tested with invalid input (input will always be an array). Order of the face (eyes, nose, mouth) elements will always be the same.
+
+```javascript
+function countSmileys(arr) {
+  //code is here
+}
+```
+
+<details><summary><b>My Answer</b></summary>
+
+```javascript
+function countSmileys(arr) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (
+      arr[i] === ":)" ||
+      arr[i] === ":-)" ||
+      arr[i] === ":~)" ||
+      arr[i] === ";)" ||
+      arr[i] === ";-)" ||
+      arr[i] === ";~)"
+    ) {
+      newArr.push(arr[i]);
+    } else if (
+      arr[i] === ":D" ||
+      arr[i] === ";-D" ||
+      arr[i] === ";~D" ||
+      arr[i] === ":-D" ||
+      arr[i] === ";D" ||
+      arr[i] === ":~D"
+    ) {
+      newArr.push(arr[i]);
+    }
+  }
+
+```
+
+</details>
+
+<details><summary><b>Best Answer</b></summary>
+
+```javascript
+function countSmileys(arr) {
+  var smileys = [
+    ":)",
+    ";)",
+    ":-)",
+    ";-)",
+    ";~)",
+    ":~)",
+    ":D",
+    ";D",
+    ":-D",
+    ":~D",
+    ";-D",
+    ";~D",
+  ];
+  var count = 0;
+
+  for (var i = 0; i < arr.length; i++) {
+    for (var j = 0; j < smileys.length; j++) {
+      if (arr[i] === smileys[j]) {
+        count++;
+      }
+    }
+  }
+  return count;
+}
+```
+
+</details>
+
+</details>
+
+#### Q: Small enough? - Beginner
+
+> 7 kyu
+
+###### Description:
+
+> You will be given an array and a limit value. You must check that all values in the array are below or equal to the limit value. If they are, return true. Else, return false. You can assume all values in the array are numbers.
+
+```javascript
+function smallEnough(a, limit) {
+  //code is here
+}
+```
+
+<details><summary><b>My Answer</b></summary>
+
+```javascript
+function smallEnough(a, limit) {
+  let newArr = a.sort((a, b) => a - b).pop();
+  return newArr <= limit ? true : false;
+}
+```
+
+</details>
+
+<details><summary><b>Best Answer</b></summary>
+
+```javascript
+function smallEnough(a, limit) {
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] > limit) {
+      return false;
+    }
+  }
+  return true;
+}
+```
+
+</details>
+
+</details>
+
+</details>
+</details>
+
+<!-- <details><summary><b>Day 2</b></summary>
+
+#### Q: Small enough? - Beginner
+
+> 7 kyu
+
+###### Description:
+
+> You will be given an array and a limit value. You must check that all values in the array are below or equal to the limit value. If they are, return true. Else, return false. You can assume all values in the array are numbers.
+
+```javascript
+function smallEnough(a, limit) {
+  //code is here
+}
+```
+
+<details><summary><b>My Answer</b></summary>
+
+```javascript
+function smallEnough(a, limit) {
+  let newArr = a.sort((a, b) => a - b).pop();
+  return newArr <= limit ? true : false;
+}
+```
+
+</details>
+
+<details><summary><b>Best Answer</b></summary>
+
+```javascript
+function smallEnough(a, limit) {
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] > limit) {
+      return false;
+    }
+  }
+  return true;
+}
+```
+
+</details>
+
+</details>
+
+</details>
+</details> -->

@@ -1,6 +1,31 @@
-function mergeArrays(arr1, arr2) {
-  let newArr = arr1.concat(arr2).sort((a, b) => a - b);
-  return newArr.filter((value, index) => newArr.indexOf(value) === index);
+//return the total number of smiling faces in the array
+//Valid smiley face examples: :) :D ;-D :~)
+
+function countSmileys(arr) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (
+      arr[i] === ":)" ||
+      arr[i] === ":-)" ||
+      arr[i] === ":~)" ||
+      arr[i] === ";)" ||
+      arr[i] === ";-)" ||
+      arr[i] === ";~)"
+    ) {
+      newArr.push(arr[i]);
+    } else if (
+      arr[i] === ":D" ||
+      arr[i] === ";-D" ||
+      arr[i] === ";~D" ||
+      arr[i] === ":-D" ||
+      arr[i] === ";D" ||
+      arr[i] === ":~D"
+    ) {
+      newArr.push(arr[i]);
+    }
+  }
+
+  return newArr.length;
 }
 
-console.log(mergeArrays([1, 3, 5, 7, 9, 11, 12], [1, 2, 3, 4, 5, 10, 12]));
+console.log(countSmileys([";~)", ":)", ":-)", ":--)"]));
