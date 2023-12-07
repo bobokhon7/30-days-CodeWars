@@ -280,6 +280,8 @@ function mergeArrays(arr1, arr2) {
 </details>
 </details>
 
+---
+
 <!-- day 2 ------------------ -->
 <details><summary><b>Day 2</b></summary>
 
@@ -381,6 +383,9 @@ function countSmileys(arr) {
 ```
 
 </details>
+
+---
+
 #### Q: Small enough? - Beginner
 
 > 7 kyu
@@ -430,49 +435,4 @@ function smallEnough(a, limit) {
 </details>
 </details>
 
-<!-- <details><summary><b>Day 2</b></summary>
-
-#### Q: Small enough? - Beginner
-
-> 7 kyu
-
-###### Description:
-
-> You will be given an array and a limit value. You must check that all values in the array are below or equal to the limit value. If they are, return true. Else, return false. You can assume all values in the array are numbers.
-
-```javascript
-function smallEnough(a, limit) {
-  //code is here
-}
-```
-
-<details><summary><b>My Answer</b></summary>
-
-```javascript
-function smallEnough(a, limit) {
-  let newArr = a.sort((a, b) => a - b).pop();
-  return newArr <= limit ? true : false;
-}
-```
-
-</details>
-
-<details><summary><b>Best Answer</b></summary>
-
-```javascript
-function smallEnough(a, limit) {
-  for (let i = 0; i < a.length; i++) {
-    if (a[i] > limit) {
-      return false;
-    }
-  }
-  return true;
-}
-```
-
-</details>
-
-</details>
-
-</details>
-</details> -->
+---
