@@ -380,6 +380,10 @@ function countSmileys(arr) {
 }
 ```
 
+</details>
+
+</details>
+
 #### Q: Small enough? - Beginner
 
 > 7 kyu
@@ -417,10 +421,6 @@ function smallEnough(a, limit) {
   return true;
 }
 ```
-
-</details>
-
-</details>
 
 </details>
 
