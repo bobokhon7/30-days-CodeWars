@@ -489,3 +489,57 @@ function rentalCarCost(d) {
 
 </details>
 </details>
+
+<details><summary><b>Day 4</b></summary>
+
+#### Q: Form The Minimum
+
+> 7 kyu
+
+###### Description:
+
+> Given a list of digits, return the smallest number that could be formed from these digits, using the digits only once (ignore duplicates).
+
+> Notes:
+> Only positive integers will be passed to the function (> 0 ), no negatives or zeros.
+> Input >> Output Examples
+
+> example
+
+```javascript
+minValue([5, 7, 5, 9, 7])  ==> return (579)
+```
+
+```javascript
+function minValue(values) {
+  //code is here
+}
+```
+
+<details><summary><b>My Answer</b></summary>
+
+```javascript
+function minValue(values) {
+  let remVal = Array.from(new Set(values));
+  let sortValues = remVal.sort((a, b) => a - b).join("");
+
+  return Number(sortValues);
+}
+```
+
+</details>
+
+<details><summary><b>Best Answer</b></summary>
+
+```javascript
+function minValue(values) {
+  return Number(Array.from(new Set(values)).sort().join(""));
+}
+```
+
+</details>
+
+</details>
+
+</details>
+</details>

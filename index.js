@@ -1,11 +1,11 @@
-function rentalCarCost(d) {
-  if (d >= 3 && d <= 6) {
-    return d * 40 - 20;
-  } else if (d >= 7) {
-    return d * 40 - 50;
-  } else {
-    return d * 40;
-  }
+function minValue(values) {
+  let remVal = Array.from(new Set(values));
+  let sortValues = remVal.sort((a, b) => a - b).join("");
+
+  return Number(sortValues);
 }
 
-console.log(rentalCarCost(7));
+//change to array
+//remove the same num and sort
+
+console.log(minValue([6, 7, 8, 7, 6, 6]));
