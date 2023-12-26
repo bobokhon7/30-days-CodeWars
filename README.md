@@ -490,6 +490,8 @@ function rentalCarCost(d) {
 </details>
 </details>
 
+---
+
 <details><summary><b>Day 4</b></summary>
 
 #### Q: Form The Minimum
