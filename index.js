@@ -1,11 +1,15 @@
-function minValue(values) {
-  let remVal = Array.from(new Set(values));
-  let sortValues = remVal.sort((a, b) => a - b).join("");
-
-  return Number(sortValues);
+function factorial(n) {
+  if (n < 0 || n > 12) {
+    return -1;
+  } else if (n === 0) {
+    return 1;
+  } else {
+    let arr = 1;
+    for (let i = 1; i <= n; i++) {
+      arr = arr * i;
+    }
+    return arr;
+  }
 }
 
-//change to array
-//remove the same num and sort
-
-console.log(minValue([6, 7, 8, 7, 6, 6]));
+console.log(factorial(2));
