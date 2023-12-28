@@ -1,15 +1,19 @@
-function factorial(n) {
-  if (n < 0 || n > 12) {
-    return -1;
-  } else if (n === 0) {
-    return 1;
-  } else {
-    let arr = 1;
-    for (let i = 1; i <= n; i++) {
-      arr = arr * i;
+function checkExam(array1, array2) {
+  let newValue = 0;
+
+  if (array1.length === array2.length) {
+    for (let i = 0; i < array1.length; i++) {
+      if (array1[i] === array2[i]) {
+        newValue += 4;
+      } else if (array2[i] === "") {
+        newValue += 0;
+      } else {
+        newValue -= 1;
+      }
     }
-    return arr;
   }
+
+  return newValue < 0 ? 0 : newValue;
 }
 
-console.log(factorial(2));
+console.log(checkExam(["a", "a", "b", "b"], ["a", "c", "b", ""]));
