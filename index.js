@@ -1,19 +1,22 @@
-function checkExam(array1, array2) {
-  let newValue = 0;
+function solve(s) {
+  let lowerLetter = [];
+  let uppetLetter = [];
 
-  if (array1.length === array2.length) {
-    for (let i = 0; i < array1.length; i++) {
-      if (array1[i] === array2[i]) {
-        newValue += 4;
-      } else if (array2[i] === "") {
-        newValue += 0;
-      } else {
-        newValue -= 1;
-      }
+  let val = s.split("");
+
+  for (let i = 0; i < val.length; i++) {
+    if (val[i] === val[i].toUpperCase()) {
+      uppetLetter.push(val[i]);
+    } else {
+      lowerLetter.push(val[i]);
     }
   }
 
-  return newValue < 0 ? 0 : newValue;
+  if (uppetLetter.length > lowerLetter.length) {
+    return s.toUpperCase();
+  } else {
+    return s.toLowerCase();
+  }
 }
 
-console.log(checkExam(["a", "a", "b", "b"], ["a", "c", "b", ""]));
+console.log(solve("cOde"));

@@ -688,3 +688,83 @@ function checkExam(array1, array2) {
 
 </details>
 </details>
+
+---
+
+<details><summary><b>Day 7</b></summary>
+
+#### Q: Fix string case
+
+> 7 kyu
+
+###### Description:
+
+> In this Kata, you will be given a string that may have mixed uppercase and lowercase letters and your task is to convert that string to either lowercase only or uppercase only based on:
+
+make as few changes as possible.
+if the string contains equal number of uppercase and lowercase letters, convert the string to lowercase.
+
+> For example:
+
+```javascript
+solve("coDe") = "code". Lowercase characters > uppercase. Change only the "D" to lowercase.
+solve("CODe") = "CODE". Uppercase characters > lowecase. Change only the "e" to uppercase.
+solve("coDE") = "code". Upper == lowercase. Change all to lowercase.
+```
+
+```javascript
+function solve(s) {
+  //Code is here
+}
+```
+
+<details><summary><b>My Answer</b></summary>
+
+```javascript
+function solve(s) {
+  let lowerLetter = [];
+  let upperLetter = [];
+
+  let val = s.split("");
+
+  for (let i = 0; i < val.length; i++) {
+    if (val[i] === val[i].toUpperCase()) {
+      upperLetter.push(val[i]);
+    } else {
+      lowerLetter.push(val[i]);
+    }
+  }
+
+  if (upperLetter.length > lowerLetter.length) {
+    return s.toUpperCase();
+  } else {
+    return s.toLowerCase();
+  }
+}
+```
+
+</details>
+
+<details><summary><b>Best Answer</b></summary>
+
+```javascript
+function solve(s) {
+  let lowerC = 0;
+  let upperC = 0;
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] == s[i].toUpperCase()) {
+      upperC++;
+    } else {
+      lowerC++;
+    }
+  }
+  return lowerC >= upperC ? s.toLowerCase() : s.toUpperCase();
+}
+```
+
+</details>
+
+</details>
+
+</details>
+</details>
