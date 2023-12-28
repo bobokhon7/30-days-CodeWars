@@ -1,22 +1,5 @@
-function solve(s) {
-  let lowerLetter = [];
-  let uppetLetter = [];
-
-  let val = s.split("");
-
-  for (let i = 0; i < val.length; i++) {
-    if (val[i] === val[i].toUpperCase()) {
-      uppetLetter.push(val[i]);
-    } else {
-      lowerLetter.push(val[i]);
-    }
-  }
-
-  if (uppetLetter.length > lowerLetter.length) {
-    return s.toUpperCase();
-  } else {
-    return s.toLowerCase();
-  }
+function arrayDiff(a, b) {
+  return a.filter((val) => !b.includes(val));
 }
 
-console.log(solve("cOde"));
+console.log(arrayDiff([1, 2, 2, 2, 3], []));
