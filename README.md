@@ -771,7 +771,7 @@ function solve(s) {
 
 ---
 
-<details><summary><b>Day 8</b></summary>
+<details><summary><b>Day 8^</b></summary>
 
 #### Q: Array.diff
 
@@ -811,6 +811,79 @@ function arrayDiff(a, b) {
   return a.filter((val) => !b.includes(val));
 }
 
+```
+
+</details>
+
+</details>
+
+</details>
+</details>
+
+---
+
+<details><summary><b>Day 9^</b></summary>
+
+#### Q: Build Tower
+
+> 6 kyu
+
+###### Description:
+
+> Build Tower
+> Build a pyramid-shaped tower, as an array/list of strings, given a positive integer number of floors. A tower block is represented with "\*" character.
+
+For example, a tower with 3 floors looks like this:
+
+```javascript
+["  *  ", " *** ", "*****"];
+```
+
+> And a tower with 6 floors looks like this:
+
+```javascript
+[
+  "     *     ",
+  "    ***    ",
+  "   *****   ",
+  "  *******  ",
+  " ********* ",
+  "***********",
+];
+```
+
+<details><summary><b>My Answer</b></summary>
+
+```javascript
+function towerBuilder(nFloors) {
+  var tower = [];
+  for (var i = 0; i < nFloors; i++) {
+    tower.push(
+      " ".repeat(nFloors - i - 1) +
+        "*".repeat(i * 2 + 1) +
+        " ".repeat(nFloors - i - 1)
+    );
+  }
+  return tower;
+}
+```
+
+</details>
+
+<details><summary><b>Best Answer</b></summary>
+
+```javascript
+function towerBuilder(nFloors) {
+  var tower = [];
+  for (var i = 0; i < nFloors; i++) {
+    tower.push(
+      " ".repeat(nFloors - i - 1) +
+        "*".repeat(i * 2 + 1) +
+        " ".repeat(nFloors - i - 1)
+    );
+  }
+  return tower;
+}
 ```
 
 </details>

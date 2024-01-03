@@ -1,5 +1,13 @@
-function arrayDiff(a, b) {
-  return a.filter((val) => !b.includes(val));
+function towerBuilder(nFloors) {
+  var tower = [];
+  for (var i = 0; i < nFloors; i++) {
+    tower.push(
+      " ".repeat(nFloors - i - 1) +
+        "*".repeat(i * 2 + 1) +
+        " ".repeat(nFloors - i - 1)
+    );
+  }
+  return tower;
 }
 
-console.log(arrayDiff([1, 2, 2, 2, 3], []));
+console.log(towerBuilder(3));
