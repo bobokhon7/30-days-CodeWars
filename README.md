@@ -892,3 +892,66 @@ function towerBuilder(nFloors) {
 
 </details>
 </details>
+
+---
+
+<details><summary><b>Day 10</b></summary>
+
+#### Q: Sum of Multiples
+
+> 8 kyu
+
+###### Description:
+
+> Your Job
+> Find the sum of all multiples of n below m
+
+Keep in Mind
+n and m are natural numbers (positive integers)
+m is excluded from the multiples
+Examples
+
+```javascript
+function correct(string) {
+  sumMul(2, 9)   ==> 2 + 4 + 6 + 8 = 20
+sumMul(3, 13)  ==> 3 + 6 + 9 + 12 = 30
+sumMul(4, 123) ==> 4 + 8 + 12 + ... = 1860
+sumMul(4, -7)  ==> "INVALID"
+}
+```
+
+<details><summary><b>My Answer</b></summary>
+
+```javascript
+function sumMul(n, m) {
+  let res = 0;
+  for (let i = n; i < m; i++) {
+    if (i % n === 0) res += i;
+  }
+  return res > 0 ? res : "INVALID";
+}
+```
+
+</details>
+
+<details><summary><b>Best Answer</b></summary>
+
+```javascript
+function sumMul(n,m){
+  let res = 0
+for(let i = n; i < m; i++){
+  if(i % n === 0)
+    res += i
+}
+  return res > 0 ? res : "INVALID"
+}
+
+code is here
+```
+
+</details>
+
+</details>
+
+</details>
+</details>
